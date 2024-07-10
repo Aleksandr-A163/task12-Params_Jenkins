@@ -64,8 +64,8 @@ public class WebFormPage {
     }
 
     @Step("Ввод пола")
-    public WebFormPage setGender(String gender) {
-        genderWrapper.$(byText(gender)).click();
+    public WebFormPage setGender(String genders) {
+        genderWrapper.$(byText(genders)).click();
         return this;
     }
 

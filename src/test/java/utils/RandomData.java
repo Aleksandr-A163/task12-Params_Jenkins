@@ -5,12 +5,10 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomData {
     Faker faker = new Faker();
-    String[] genders = {"Male", "Female", "Other"},
-    hobbies = {"Sports", "Reading", "Music"},
+    String[] hobbies = {"Sports", "Reading", "Music"},
     subjects = {"Maths", "Art","Physics", "English", "Computer Science", "Hindi", "Commerce"},
     months = {"January", "February", "March", "April",
-            "May", "June", "July", "August", "September", "October", "November", "December"},
-    pictures = {"1.jpeg", "2.png", "3.bmp"};
+            "May", "June", "July", "August", "September", "October", "November", "December"};
 
     public String firstName = faker.name().firstName(),
     lastName = faker.name().lastName(),
