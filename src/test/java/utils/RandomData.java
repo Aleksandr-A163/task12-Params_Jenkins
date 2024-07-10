@@ -23,7 +23,7 @@ public class RandomData {
     subject = getRandomItemFromArray(subjects),
     state = getState(),
     city = getRandomCity(),
-    picture = faker.options().option("leopard.jpg", "men.jpg");;
+    picture = faker.options().option("leopard.jpg", "men.jpg");
 
     public String getState() {
         state = faker.options().option("NCR", "Uttar Pradesh", "Haryana", "Rajasthan");
