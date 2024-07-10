@@ -126,7 +126,7 @@ public class WebFormPage {
         return this;
     }
 
-    @Step("Провкрка результата ввода")
+    @Step("Проверка результата ввода")
     public WebFormPage checkResult(String key, String value) {
         resultPracticeForm.checkResultForm(key, value);
         return this;

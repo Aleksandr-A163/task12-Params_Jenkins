@@ -62,7 +62,7 @@ public class TextBoxPage {
         return this;
     }
 
-    @Step("Провкрка результата ввода")
+    @Step("Проверка результата ввода")
     public TextBoxPage checkResult(String id, String text) {
         resulTable.$(byId(id)).parent()
                 .shouldHave(text(text));
