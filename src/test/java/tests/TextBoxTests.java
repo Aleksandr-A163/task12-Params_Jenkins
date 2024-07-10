@@ -13,6 +13,7 @@ public class TextBoxTests extends WebTestBase {
     RandomData randomData = new RandomData();
 
     @Test
+    @DisplayName("Проверка малой формы")
     void fillFormTest() {
         textBox.openPage()
         .bannerDrop()

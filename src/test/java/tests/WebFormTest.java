@@ -14,6 +14,7 @@ public class WebFormTest extends WebTestBase {
         RandomData randomData = new RandomData();
 
     @Test
+    @DisplayName("Проверка большой формы")
     void webFormTest() {
         webFormPage.openPage()
         .bannerDrop()
@@ -42,6 +43,7 @@ public class WebFormTest extends WebTestBase {
                 .checkResult("State and City", randomData.state + " " + randomData.city);
     }
     @Test
+    @DisplayName("Проверка малой формы")
     void shortFillFormTest() {
         webFormPage.openPage();
         webFormPage.bannerDrop()
@@ -58,6 +60,7 @@ public class WebFormTest extends WebTestBase {
     }
 
     @Test
+    @DisplayName("Проверка некорректного заполнения")
     void incorrectFillFormTest() {
         webFormPage.openPage();
         webFormPage.bannerDrop()
